@@ -1,0 +1,1604 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+*,
+*::after,
+*::before {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.logo {
+    margin: auto;
+}
+
+.titleFont,
+.payoffFont {
+    font-family: Notable;
+}
+
+body {
+    font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+.headerDisplayNone {
+    display: none;
+}
+
+#contentGridContainerContact + footer,
+#asideFlexItemHomepage + footer,
+#asideGridContainerProduct + footer,
+#asideGridContainerContact + footer
+ {
+    font-size: 1.1em;
+}
+
+.cookieStatement {
+    flex: 0 1 auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: #FA0;
+    opacity: 50%;
+    padding: 6px;
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-indent: 0px;
+    word-spacing: normal;
+}
+
+.footer cite {
+    float: left;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+footer {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.footerArticleHomepage,
+.articleProduct footer {
+    margin-top: 10px;
+}
+
+/* --- PC ---*/
+@media screen and (min-width: 1280px) { 
+    /* -- Overall --- */
+    .hamburgerMenuCheckbox {
+        display: none;
+    }
+
+    .cookieStatement
+    {
+        margin-right: 20px;
+    }
+    
+    /* --- Homepage (Flexbox, PC) --- */
+    .bodyFlexParent {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .titleHomepage, .payoffHomepage {
+        text-align: center;
+    }
+
+    .navigationFlexItemHomepage {
+        flex: 1 0 100%;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigationFlexItemHomepage > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        background: #000;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .navigationFlexItemHomepage li {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navigationFlexItemHomepage a {
+        text-decoration: none;
+        font-size: 1.2em; 
+        color: #FFF;
+    }
+
+    .navigationFlexItemHomepage a:hover {
+        color:#FA6;
+    }
+
+    .navigationFlexItemHomepage a:active {
+        color: #ff1100;
+    }
+    
+    .headerFlexItemHomepage {
+        flex: 1 0 100%;
+        font-size: 1.3em;
+    }
+
+    #videoFlexItemHomepage {
+        flex: 0 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: #FA6;
+        border-left: #000 2px solid;
+        border-top: #000 2px solid;
+        border-right: #000 2px solid;
+    }
+
+    #video-for-pc {
+        width: 80%;
+        border-width: 10px;
+        border-color: #000;
+        border-style: double;
+        border-radius: 10px;
+    }
+
+    #video-for-tablet {
+        display: none;
+    }
+
+    #contentFlexItemHomepage {
+        flex: 1 0 0px;
+        border-right: 3px solid #000;
+        margin-left: 20px;
+    }
+
+    article {
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin: 15px;
+    }
+
+    #articlesHomepage {
+        display: flex;
+        background-color: #FA6;
+        flex-direction: column;
+        border-bottom-left-radius: 10px;
+        border-left: #000 2px solid;
+        border-bottom: #000 2px solid;
+    }
+
+    #articleHomepage1,
+    #articleHomepage2,
+    #articleHomepage3 {
+        font-size: 1.4em;
+        border-bottom: 2px solid #000;
+    }
+
+    .imageForArticleHomepage {
+        float: right;
+    }
+
+    .imageForArticleHomepage figcaption {
+        margin-left: 20px;
+    }
+
+    .imageForArticleHomepage img {
+        width: 600px;
+        margin-top: 20px;
+        margin-left: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    #asideFlexItemHomepage {
+        flex: 0 0 400px;
+        background-color: #FA6;
+        padding-left: 60px;
+        padding-right: 20px;
+        font-size: 1.6em;
+        margin-right: 20px;
+        border-bottom-right-radius: 10px;
+        border-right: #000 2px solid;
+        border-bottom: #000 2px solid;
+    }
+
+    #asideFlexItemHomepage li {
+        line-height: 35px;
+    }
+
+
+    /* --- Product Page (Grid, PC) --- */
+    .bodyGridContainerProduct {
+        display: grid;
+    }
+
+    .headerGridItem {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .navigationGridItem {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .navigationGridItem > ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        background: #000;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .navigationGridItem li {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .navigationGridItem a {
+        text-decoration: none;
+        font-size: 1.2em; 
+        color: #FFF;
+    }
+
+    .navigationGridItem a:hover {
+        color: #FA6;
+    }
+
+    .navigationGridItem a:active {
+        color: #ff1100;
+    }
+
+    .articlesGridContainerProduct {
+        display: grid;
+        grid-template-columns: 40% 35% auto;
+        grid-template-rows: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+        grid-template-areas: 
+            "articleProduct2 articleProduct1 articleProduct3"
+            "articleProduct2 articleProduct1 articleProduct3"
+            "articleProduct5 articleProduct1 articleProduct3"
+            "articleProduct5 articleProduct1 articleProduct4"
+            "articleProduct5 articleProduct1 articleProduct4"
+            "articleProduct5 articleProduct1 articleProduct4"
+            "articleProduct5 articleProduct6 articleProduct6";
+    }
+
+    .articlesGridContainerProduct + article {
+        background-color: #d19284;
+    }
+
+    #articleProduct1 {
+        grid-area: articleProduct1;
+        place-self: center;
+    }
+
+    #articleProduct2 {
+        grid-area: articleProduct2;
+    }
+
+    #articleProduct3 {
+        grid-area: articleProduct3;
+        place-self: end;
+    }
+
+    #articleProduct4 {
+        grid-area: articleProduct4;
+        place-self: end;
+    }
+
+    #articleProduct5 {
+        grid-area: articleProduct5;
+    }
+
+    #articleProduct6 {
+        grid-area: articleProduct6;
+    }
+
+    .articleProduct {
+        background-color: #ebbf7f;
+        border: #000 2px solid;
+        border-radius: 10px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #asideGridItemProduct {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerProduct {
+        display: grid;
+        grid-template-columns: 40% 35% auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .imageAsideProduct {
+        width: 400px;
+        height: 250px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+
+    /* --- PRICING (Grid, PC) --- */
+    .bodyGridContainerPricing {
+        display: grid;
+    }
+
+    #articlePricing {
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    #articlePricing p,
+    #articlePricing h2,
+    #articlePricing footer {
+        padding: 10px;
+    }
+
+    .imageForArticlePricing {
+        margin: 10px;
+        float: right;
+    }
+    
+    .imageForArticlePricing img {
+        width: 400px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    .contentGridContainerPricing {
+        display: grid;
+        grid-template-columns: 40% 30% auto;
+        justify-content: start;
+        grid-template-areas: 
+            "table table aside";
+    }
+
+    #tablePricing {
+        grid-area: table;
+        overflow-x: auto;
+        border-collapse: collapse;
+        place-self: center;
+        margin-left: 20px;
+    }
+
+    #tablePricing tr:nth-child(2n+0) {
+        background-color: #FFF;
+    }
+
+    #tablePricing tr:nth-child(2n+1) {
+        background-color: #CFF;
+    }
+
+    #tablePricing td:first-child,
+    #tablePricing th:first-child {
+        background-color: #FF0;
+        color: #000;
+    }
+
+    #tablePricing th::first-letter {
+        color: #d11141;
+    }
+
+    #tablePricing,
+    #tablePricing th, 
+    #tablePricing td {
+        padding: 10px;
+        border: #000 2px solid;
+    }
+
+    #tablePricing tr:hover {
+        background-color: #FA6;
+    }
+
+    #tablePricing th {
+        font-size: 1.2em;
+        text-align: center;
+        width: 200px;
+    }
+
+    #tablePricing td {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    #tableFooterPricing {
+        margin-left: 180px;
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    .asideGridContainerPricing {
+        grid-area: aside;
+        place-self: start;
+        display: grid;
+        justify-content: space-evenly;
+        grid-gap: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerPricing h2 {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    .imageAsidePricing {
+        width: 320px;
+        height: 190px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+
+    /* --- CONTACT (Grid, PC) --- */
+    .bodyGridContainerContact {
+        display: grid;
+    }
+
+    #contentGridContainerContact {
+        display: grid;
+        grid-template-columns: 30% 25% auto;
+        grid-template-areas: 
+            "form form aside";
+        background-color: #FA6;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact {
+        grid-area: form;
+        place-self: center;
+        width: 650px;
+        font-size: 1.5em;
+        background-color: #FFC72B;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact legend {
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    #formContact li {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #formContact input,
+    #formContact textarea {
+        width: 365px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    #formContact input {
+        vertical-align: middle;
+    }
+
+    #formContact textarea {
+        height: 120px;
+        vertical-align: top;
+        resize: vertical;
+    }
+
+    #formContact button {
+        width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: #cfcac6;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    #formContact button:hover {
+        color: white;
+        background-color: #000;
+    }
+
+    .asideGridContainerContact {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: aside;
+        place-self: center;
+        grid-gap: 10px;
+        margin-left: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerContact h2 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .imageAsideContact {
+        width: 400px;
+        height: 230px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+}
+
+/* --- TABLET --- */
+@media screen and (min-width: 480px) and (max-width: 1279px) {
+    /* --- Overall --- */
+    .cookieStatement
+    {
+        margin-right: 20px;
+    }
+
+
+    /* --- Homepage (Flexbox, Tablet) --- */
+    .bodyFlexParent {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .headerFlexItemHomepage {
+        order: -1;
+        flex: 1 0 100%;
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    .hamburgerMenuCheckbox {
+        display: none;
+    }
+
+    .navigationFlexItemHomepage {
+        order: -1;
+        flex: 1 0 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .navigationFlexItemHomepage > ul {
+        display: flex;
+        justify-content: center;
+        background: #000;
+        list-style-type: none;
+        text-transform: uppercase;
+        font-size: 1.6em;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .navigationFlexItemHomepage li {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .navigationFlexItemHomepage a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .navigationFlexItemHomepage a:active {
+        color: #ff1100;
+    }
+
+    #asideFlexItemHomepage {
+        order: -1;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 20px;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 1.5em;
+        text-align: left;
+        background-color: #FA6;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #videoFlexItemHomepage {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 10px;
+        background-color:#FA6;
+        border: #000 2px solid;
+    }
+
+    #video-for-tablet {
+        width: 80%;
+        margin-bottom: 20px;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    #video-for-pc {
+        display: none;
+    }
+
+    article {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    #articlesHomepage {
+        display: flex;
+        flex-direction: column;
+        background-color: #FA6;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #articleHomepage1,
+    #articleHomepage2,
+    #articleHomepage3 {
+        font-size: 1.4em;
+        border-bottom: 2px solid #000;
+    }
+
+    #articleHomepage1 {
+        order: 3;
+    }
+
+    #articleHomepage2 {
+        order: 2;
+    }
+
+    #articleHomepage3 {
+        order: 1;
+    }
+
+    .imageForArticleHomepage {
+        float: left;
+    }
+
+    .imageForArticleHomepage img {
+        width: 350px;
+        margin-top: 20px;
+        margin-right: 20px;
+        border: 2px solid black;
+    }
+
+    .moreInfoArticleHomepage {
+        float: left;
+    }
+
+    .footerArticleHomepage {
+        float: right;
+    }
+
+
+    /* --- Product Page (Grid, Tablet) --- */
+    .headerGridItem {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .navigationGridItem {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: grid;
+        justify-content: center;
+    }
+
+    .navigationGridItem > ul {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        background: #000;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .navigationGridItem li {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+    .navigationGridItem a {
+        text-decoration: none;
+        font-size: 1.2em; 
+        color: white;
+    }
+
+    .navigationGridItem a:hover {
+        color: #FA6;
+    }
+
+    .navigationGridItem a:active {
+        color: #ff1100;
+    }
+    
+    .bodyGridContainerProduct {
+        display: grid;
+    }
+
+    .articlesGridContainerProduct {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+        grid-template-areas: 
+            "articleProduct1 articleProduct2"
+            "articleProduct1 articleProduct2"
+            "articleProduct3 articleProduct2"
+            "articleProduct3 articleProduct5"
+            "articleProduct3 articleProduct5"
+            "articleProduct3 articleProduct5"
+            "articleProduct6 articleProduct6";
+    }
+
+    #articleProduct1 {
+        grid-area: articleProduct1;
+        place-self: start;
+    }
+
+    #articleProduct2 {
+        grid-area: articleProduct2;
+        place-self: end;
+    }
+
+    #articleProduct3 {
+        grid-area: articleProduct3;
+        place-self: center;
+    }
+
+    #articleProduct4 {
+        display: none;
+    }
+
+    #articleProduct5 {
+        grid-area: articleProduct5;
+        place-self: center;
+    }
+
+    #articleProduct6 {
+        grid-area: articleProduct6;
+    }
+
+    .articleProduct {
+        background-color: rgb(235, 191, 127);
+        border: #000 2px solid;
+        border-radius: 10px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #asideGridItemProduct {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 5px;
+        padding-top: 15px;
+        padding-right: 5px;
+        padding-bottom: 15px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    .imageAsideProduct {
+        width: 300px;
+        height: 190px;
+        margin-left: 5px;
+        margin-right: 5px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+
+    /* --- PRICING (Grid, Tablet) --- */
+    .bodyGridContainerPricing {
+        display: grid;
+    }
+
+    #articlePricing {
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    #articlePricing p,
+    #articlePricing h2,
+    #articlePricing footer {
+        padding: 10px;
+    }
+
+    .imageForArticlePricing {
+        margin: 10px;
+        float: right;
+    }
+    
+    .imageForArticlePricing img {
+        width: 400px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    .contentGridContainerPricing {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-template-areas: 
+            "table table"
+            "footer footer"
+            "aside aside";
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #tablePricing {
+        grid-area: table;
+        overflow-x: auto;
+        border-collapse: collapse;
+    }
+
+    #tablePricing tr:nth-child(2n+0) {
+        background-color: #FFF;
+    }
+
+    #tablePricing tr:nth-child(2n+1) {
+        background-color: #CFF;
+    }
+
+    #tablePricing td:first-child,
+    #tablePricing th:first-child {
+        background-color: #FF0;
+        color: #000;
+    }
+
+    #tablePricing th::first-letter {
+        color: #d11141;
+    }
+
+    #tablePricing,
+    #tablePricing th, 
+    #tablePricing td {
+        padding: 10px;
+        border: #000 2px solid;
+    }
+
+    #tablePricing tr:hover {
+        background-color: #FA6;
+    }
+
+    #tablePricing th {
+        font-size: 1.2em;
+        text-align: center;
+        width: 200px;
+        background-color: #FA6;
+    }
+
+    #tablePricing td {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    #tableFooterPricing {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    #tableFooterPricing cite {
+        grid-area: footer;
+    }
+
+    .asideGridContainerPricing {
+        grid-area: aside;
+        place-self: center;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        grid-gap: 10px;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerPricing h2 {
+        display: none;
+    }
+
+    .imageAsidePricing {
+        width: 400px;
+        height: 250px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    #imageAsidePricing1 {
+        display: none;
+    }
+
+    #imageAsidePricing2 {
+        margin-left: -10px;
+    }
+
+
+    /* --- CONTACT (Grid, Tablet) --- */
+    .bodyGridContainerContact {
+        display: grid;
+    }
+
+    #contentGridContainerContact {
+        display: grid;
+        grid-template-columns: 65% auto;
+        grid-template-areas: 
+            "form aside";
+        background-color: #FA6;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact {
+        grid-area: form;
+        place-self: center;
+        width: 650px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1.5em;
+        background-color: #FFC72B;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact legend {
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    #formContact li {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #formContact input,
+    #formContact textarea {
+        width: 365px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    #formContact input {
+        vertical-align: middle;
+    }
+
+    #formContact textarea {
+        height: 120px;
+        vertical-align: top;
+        resize: vertical;
+    }
+
+    #formContact button {
+        width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: rgb(207, 202, 198);
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    #formContact button:hover {
+        color: white;
+        background-color: #000;
+    }
+
+    .asideGridContainerContact {
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: aside;
+        grid-gap: 10px;
+        margin-left: 20px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerContact h2 {
+        padding-top: 10px;
+        margin-left: 80px;
+        font-size: 2em;
+    }
+
+    .imageAsideContact {
+        width: 300px;
+        height: 180px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+}
+
+/* --- MOBILE --- */
+@media screen and (max-width: 479px) {
+    /* --- Overall --- */
+    .logo {
+        display: none;
+    }
+
+    .headerGridItem {
+        width: 95%;
+    }
+
+    .cookieStatement {
+        margin-right: 10px;
+    }
+
+
+    /* --- Hamburger Menu --- */
+    .hamburgerMenuItems {
+        text-align: center;
+        position: absolute;
+        padding: 1rem;
+        top: 4rem;
+        right: 1rem;
+        list-style: none;
+        opacity: 0;
+        font-size: 2rem;
+        background-color: black;
+        border-radius: 0.25em;
+    }
+
+    .hamburgerMenuItems li{
+        padding: 0.5rem;
+    }
+    
+    .hamburgerMenuItems li a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .hamburgerMenuCheckbox {
+        order: -1;
+        right: 1.7rem;
+        top: 2rem;
+        width: 25px;
+        position: absolute;
+        padding-left: 20px;
+        padding-right: 20px;
+        opacity: 0;
+    }
+
+    .hamburgerMenuCheckbox:hover {
+        cursor: pointer;
+    }
+    
+    .hamburgerMenuCheckbox:checked~.hamburgerMenuItems {
+        display: block;
+        opacity: 1;
+    }
+
+    .hamburgerMenuIcon {
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: black;
+        border-radius: 0.25em;
+    }
+    
+    .hamburgerMenuIcon .line {
+        background-color: white;
+        border-radius: 1em;
+        width: 2rem;
+        height: 0.25rem;
+    }
+
+    .navigationFlexItemHomepage {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigationFlexItemHomepage > ul {
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+
+    .navigationFlexItemHomepage li {
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navigationFlexItemHomepage a:active {
+        color: #ff1100;
+    }
+
+
+    /* --- Homepage (Flexbox, Mobile) --- */
+    .bodyFlexParent {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .headerFlexItemHomepage {
+        order: -1;
+        flex: 0 0 80%;
+        margin-bottom: 0.5em;
+    }
+
+    .titleHomepage, .payoffHomepage {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 1.9em;
+    }
+
+    #asideFlexItemHomepage {
+        order: -1;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-top: 10px;
+        font-size: 1.4em;
+        background-color: #FA6;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: left;
+        border-top: #000 2px solid;
+        border-left: #000 2px solid;
+        border-right: #000 2px solid;
+    }
+
+    #asideFlexItemHomepage ol {
+        padding-right: 30px;
+        padding-left: 50px;
+    }
+
+    #asideHeaderHomepage {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #video-for-pc, #video-for-tablet {
+        display: none;
+    }
+
+    article {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    #articlesHomepage {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #FA6;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: #000 2px solid;
+        border-right: #000 2px solid;
+        border-bottom: #000 2px solid;
+    }
+
+    #articleHomepage1,
+    #articleHomepage2,
+    #articleHomepage3 {
+        font-size: 1.4em;
+        border-bottom: 2px solid #000;
+    }
+
+    .imageForArticleHomepage img {
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 20px;
+        border: 2px solid black;
+    }
+
+
+    /* --- Product (Grid, Mobile) --- */
+    .bodyGridContainerProduct {
+        display: grid;
+    }
+
+    .headerGridItem {
+        font-size: 1.1em;
+    }
+
+    .titleGrid {
+        width: 65%;
+    }
+
+    .titleGrid, .payoffGrid {
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 1.7em;
+    }
+
+    .articlesGridContainerProduct {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+        grid-template-areas: 
+            "articleProduct5"
+            "articleProduct3"
+            "articleProduct2"
+            "articleProduct1";
+    }
+
+    #articleProduct1 {
+        grid-area: articleProduct1;
+        place-self: center;
+    }
+
+    #articleProduct2 {
+        grid-area: articleProduct2;
+        place-self: center;
+    }
+
+    #articleProduct3 {
+        grid-area: articleProduct3;
+        place-self: center;
+    }
+
+    #articleProduct4 {
+        display: none;
+    }
+
+    #articleProduct5 {
+        grid-area: articleProduct5;
+        place-self: center;
+    }
+
+    #articleProduct6 {
+        display: none;
+    }
+
+    .articleProduct {
+        background-color: rgb(235, 191, 127);
+        border: #000 2px solid;
+        border-radius: 10px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #asideGridItemProduct {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5px;
+        justify-content: space-around;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    .imageAsideProduct {
+        width: 400px;
+        height: 250px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    /* --- PRICING (Grid, Mobile) --- */
+    .bodyGridContainerPricing {
+        display: grid;
+    }
+
+    #articlePricing {
+        display: none;
+    }
+
+    .imageForArticlePricing {
+        display: none;
+    }
+
+    .contentGridContainerPricing {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        grid-template-areas: 
+            "table table"
+            "footer footer"
+            "aside aside";
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #tablePricing {
+        grid-area: table;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+
+    #tablePricing tr:nth-child(2n+0) {
+        background-color: #FFF;
+    }
+
+    #tablePricing tr:nth-child(2n+1) {
+        background-color: #CFF;
+    }
+
+    #tablePricing td:first-child,
+    #tablePricing th:first-child {
+        background-color: #FF0;
+        color: #000;
+    }
+
+    #tablePricing th::first-letter {
+        color: #d11141;
+    }
+
+    #tablePricing,
+    #tablePricing th, 
+    #tablePricing td {
+        padding: 10px;
+        border: #000 2px solid;
+    }
+
+    #tablePricing tr:hover {
+        background-color: #FA6;
+    }
+
+    #tablePricing th {
+        font-size: 1.1em;
+        text-align: center;
+        background-color: #FA6;
+    }
+
+    #tablePricing td {
+        overflow: auto;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    #tableFooterPricing {
+        margin-left: 20px;
+        margin-top: 10px;
+        font-size: 1.2em;
+    }
+
+    #tableFooterPricing cite {
+        grid-area: footer;
+    }
+
+    .asideGridContainerPricing {
+        grid-area: aside;
+        place-self: center;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+        grid-gap: 10px;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #FA6;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerPricing h2 {
+        display: none;
+    }
+
+    .imageAsidePricing {
+        width: 380px;
+        height: 230px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+
+    /* --- CONTACT (Grid, Mobile) --- */
+    .bodyGridContainerContact {
+        display: grid;
+    }
+
+    #contentGridContainerContact {
+        display: grid;
+        grid-template-columns: auto;
+        background-color: rgb(244, 137, 49);
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact {
+        box-sizing: border-box;
+        place-self: center;
+        width: 400px;
+        margin: 20px;
+        font-size: 1.5em;
+        background-color: #FFC72B;
+        border-radius: 10px;
+        border: #000 2px solid;
+    }
+
+    #formContact legend {
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+        font-size: 1.3em;
+    }
+
+    #formContact li {
+        list-style-type: none;
+        padding: 10px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    #formContact input,
+    #formContact textarea {
+        display: block;
+        width: 310px;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1em;
+    }
+
+    #formContact input {
+        vertical-align: middle;
+    }
+
+    #formContact textarea {
+        height: 120px;
+        vertical-align: top;
+        resize: vertical;
+    }
+
+    #formContact button {
+        width: 310px;
+        margin-left: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 1.2em;
+        background-color: rgb(207, 202, 198);
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+
+    #formContact button:hover {
+        color: white;
+        background-color: #000;
+    }
+
+    .asideGridContainerContact {
+        display: grid;
+        grid-template-columns: auto;
+        place-self: center;
+        grid-gap: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerContact h2 {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .imageAsideContact {
+        width: 400px;
+        height: 250px;
+        border: #000 2px solid;
+        border-radius: 10px;
+    }
+}
