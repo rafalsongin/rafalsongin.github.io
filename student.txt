@@ -1,3 +1,0 @@
-student name: Rafal Songin
-student number: 697248
-student class: 1C
